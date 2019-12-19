@@ -1,0 +1,414 @@
+/*
+
+CSS til forskjellige sider står med overskrift over.
+
+Alle gridcontainere har ordet Grid i klasse eller id.
+Alle gridelement har en klasse som inneholder _E eler element.
+universell.css har det som er universelt for nettstedet.
+Nettstedet er tilpasset for Laptop, mobil og tablet.
+
+/*HJEMMESIDE*/
+.GridHS{
+  display: grid;
+  grid-template-columns: 20% 30% 70%;
+  grid-gap: 3%;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+.G_element_HS{
+  width: 100%;
+  border-radius: 10%;
+}
+.G_element_HS p{
+  font-size: 21px;
+}
+#infoListHS{
+  background-color:rgba(110,110,110, 0.7);
+  width: 20%;
+  margin-left: 25%;
+  padding: 5%;
+  border-radius: 10%;
+}
+#infoListHS h2{
+  margin-top: 2%;
+}
+#infoListHS a{
+  text-decoration: underline;
+  color: #A1A8B4;
+  font-size: 15px;
+}
+/*National Focus*/
+.nationalfocusGrid1{
+  margin-left: 2%;
+  width: 100%;
+  height: 20%;
+  margin-bottom: 1%;
+}
+.nationalfocusGrid1 img{
+  width: 80%;
+}
+.nationalfocusSmallGrid{
+  width: 100%;
+  margin-bottom: 1%;
+}
+.nationalfocusSmallGrid img{
+  border-radius: 10%;
+}
+.nationalfocusSmallGrid p{
+  border-top: 3px solid rgba(143, 143, 143, 0.7);
+  border-bottom: 3px solid rgba(143, 143, 143, 0.7);
+}
+.nationalfocusGrid1_E{
+  border-top: 3px solid rgba(143, 143, 143, 0.7);
+  border-bottom: 3px solid rgba(143, 143, 143, 0.7);
+}
+.nationalfocusGrid2{
+  margin-right: 2%;
+  margin-left: 5%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3%;
+}
+.nationalfocusGrid2 img{
+  width: 100%;
+}
+#NFtitle{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(110,110,110);
+  font-size: 140%;
+}
+/*Forskningsside*/
+.flex{
+  display: flex;
+  justify-content: space-around;
+}
+.researchGrid1{
+  margin-left: 2%;
+  width: 100%;
+  height: 20%;
+  margin-bottom: 2%;
+}
+.researchGrid1 img{
+  width: 80%;
+}
+.researchSmallGrid{
+  width: 100%;
+  margin-bottom: 1%;
+}
+.researchSmallGrid img{
+  border-radius: 10%;
+  width: 100%;
+}
+.researchGrid2{
+  margin-right: 2%;
+  margin-left: 5%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1%;
+}
+/*Militærside*/
+.textGridMS{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 20% 20%;
+  grid-gap: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.textGridMS_E{
+  width: 100%;
+}
+.textGridMS_E h1{
+  color: rgb(143,143,143);
+  font-size: 165%;
+}
+.militaryGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1%;
+}
+.militaryGrid_E{
+  width: 100%;
+  text-align: center;
+}
+.militaryGrid img{
+  width: 80%;
+  border: 3px solid rgb(110, 110, 110);
+}
+.militaryGrid img:hover{
+  transform: scale(1.04);
+  transition-duration: 0.3s;
+}
+/*Hærside*/
+#armyMain h1{
+  text-align: center;
+  color: rgb(143, 143, 143);
+}
+.armyGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2%;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-top: 2%;
+}
+.armyGrid_E{
+  width: 60%;
+  border: solid 3px rgb(110, 110, 110);
+  border-radius: 10%;
+}
+.armyGrid_ET{
+  width: 100%;
+}
+.divisionGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2%;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+.divisionGridE{
+  width: 100%;
+}
+.divisionGridE h2{
+  text-align: center;
+}
+.divisionImage{
+  width: 100%;
+}
+/*Flåteside*/
+.imgGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2%;
+  margin-top: 21%;
+}
+.NAFGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 20% 20% 20%;
+  grid-gap: 6%;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+.NAFGrid_E h2{
+  text-align: center;
+}
+.NAFGrid_E{
+  width: 100%;
+}
+/*Teknologiside*/
+#researchtitle{
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(110,110,110);
+  font-size: 140%;
+}
+@media screen and (max-width: 1100px){
+  #NFtitle{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(110,110,110);
+    font-size: 100%;
+  }
+}
+@media screen and (max-width: 900px){
+  /*National Focus*/
+  .nationalfocusGrid1{
+    margin-left: 2%;
+    width: 100%;
+    height: 20%;
+    margin-bottom: 5%;
+  }
+  .nationalfocusGrid2{
+    margin-right: 2%;
+    margin-left: 5%;
+    margin-top: 30%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 6%;
+  }
+  #NFtitle{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(110,110,110);
+    font-size: 100%;
+  }
+  /*Forskning*/
+  .researchGrid2{
+    margin-right: 2%;
+    margin-left: 5%;
+    margin-top: 30%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 6%;
+  }
+  .flex{
+    display: inline;
+  }
+  /*Luf og Flåteside*/
+  .imgGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 2%;
+    margin-top: 21%;
+  }
+  /*Hjemmeside*/
+  .GridHS{
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    grid-gap: 3%;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+  .G_element_HS p{
+    font-size: 12px;
+  }
+  #infoListHS{
+    background-color:rgba(99, 99, 99, 0.7);
+    width: 40%;
+    margin-left: 25%;
+    padding: 5%;
+    border-radius: 10%;
+  }
+  #infoListHS h2{
+    margin-top: 2%;
+    font-size: 10px;
+  }
+  #infoListHS a{
+    text-decoration: none;
+    color: #A1A8B4;
+    font-size: 8px;
+  }
+  #infoListHS ul{
+    margin-left: 1%;
+  }
+}
+@media screen and (max-width: 600px){
+  /*Research og National Focus */
+  #NFtitle{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(110,110,110);
+    font-size: 70%;
+  }
+  .nationalfocusGrid2{
+    margin-right: 2%;
+    margin-left: 5%;
+    margin-top: 30%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2%;
+  }
+  .researchGrid2{
+    margin-right: 2%;
+    margin-left: 5%;
+    margin-top: 30%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2%;
+  }
+  /*luft og flåteside*/
+  .imgGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30% 70%;
+    grid-gap: 0%;
+    margin-top: 4%;
+  }
+  .NAFGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% 15% 15% 15% 15% 15%;
+    grid-gap: 3%;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+  /*hærside*/
+  .armyGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5% 5%;
+    grid-gap: 50%;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 2%;
+    margin-bottom: 14%;
+  }
+  .divisionGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% 15% 15%;
+    grid-gap: 20%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 18%;
+  }
+  /*militærside*/
+  .textGridMS{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 10% 10% 10%;
+    grid-gap: 34%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .militaryGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% 15% 15% 15%;
+    grid-gap: 19%;
+  }
+  /*Hjemmeside*/
+  .GridHS{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 3%;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+  #infoListHS{
+    background-color:rgba(99, 99, 99, 0.7);
+    padding: 5%;
+    border-radius: 10%;
+  }
+  #infoListHS h2{
+    margin-top: 2%;
+    font-size: 14px;
+  }
+  #infoListHS a{
+    text-decoration: none;
+    color: #A1A8B4;
+    font-size: 12px;
+  }
+  #infoListHS ul{
+    margin-left: 1%;
+  }
+  .G_element_HS{
+    width: 60%;
+    border-radius: 10%;
+    margin: auto;
+  }
+  .G_element_HS p{
+    text-align: center;
+    font-size: 12px;
+  }
+}
